@@ -9,6 +9,8 @@
 <head>
 	<title>books catalog</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<!-- BOOTSTRAP: Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -24,18 +26,19 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-static-top">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+          <a class="navbar-brand" href="#">Book catalog</a>
+        
+          <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Book catalog</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        
+        <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="manageBooks.php">Manage books</a></li>
             <li><a href="manageCategories.php">Manage categories</a></li>
@@ -74,9 +77,30 @@
 			</thead>
 			<tbody>
 				<?php
+		          
+		          $books = "SELECT * FROM books ORDER BY name_book";
+		          $result = mysqli_query($connection, $books);
 
-					
-            	?>
+		          if($connection->connect_errno!=0) {
+		            echo "Error:".$connection->connect_errno;
+		          } else {
+
+
+		            while($row = mysqli_fetch_assoc($result)) {
+		              echo "<tr>";
+		              echo "<td>".$row['id_book']."</td>";
+		              echo "<td>".$row['name_book']."</td>";
+		              echo "<td>".$row['author']."</td>";
+		              echo "<td>".$row['page_count']."</td>";
+		              echo "<td>".$row['category']."</td>";
+		              echo "<td>".$row['price']."</td>";
+		              echo "</tr>";
+		            }
+		          }
+
+		          $connection->close();
+
+        		?>
 			</tbody>
 		</table>
 

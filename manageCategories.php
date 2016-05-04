@@ -9,6 +9,8 @@
 <head>
 	<title>books catalog</title>
 
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 	<!-- BOOTSTRAP: Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -37,7 +39,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">All categories</a></li>
+            <li class="active"><a href="#">All categories</a></li>
             <li><a href="createCategory.php">Create category</a></li>
             <li><a href="updateCategory.php">Update category</a></li>
             <li><a href="deleteCategory.php">Delete category</a></li>

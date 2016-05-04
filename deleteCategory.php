@@ -9,6 +9,8 @@
 <head>
 	<title>books catalog</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 	<!-- BOOTSTRAP: Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -40,7 +42,7 @@
             <li><a href="manageCategories.php">All categories</a></li>
             <li><a href="createCategory.php">Create category</a></li>
             <li><a href="updateCategory.php">Update category</a></li>
-            <li><a href="deleteCategory.php">Delete category</a></li>
+            <li class="active"><a href="deleteCategory.php">Delete category</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -48,7 +50,7 @@
 
 <div id="box">
   <h1>Delete category</h1>
-  <form action="success.php" method="post" class="navbar-form navbar-left" role="search">
+  <form action="dbDeleteCategory.php" method="post" class="navbar-form navbar-left" role="search">
     <div class="form-group">
       <div><input type="text" class="form-control" name="id_category" placeholder="Category's ID" required></div>
       <div><input type="text" class="form-control" name="name_category" placeholder="Category's name" required></div>

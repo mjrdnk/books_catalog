@@ -9,6 +9,8 @@
 <head>
 	<title>books catalog</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 	<!-- BOOTSTRAP: Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -39,7 +41,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="manageCategories.php">All categories</a></li>
             <li><a href="createCategory.php">Create category</a></li>
-            <li><a href="updateCategory.php">Update category</a></li>
+            <li class="active"><a href="updateCategory.php">Update category</a></li>
             <li><a href="deleteCategory.php">Delete category</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -48,10 +50,10 @@
 
 <div id="box">
 	<h1>Update existing category</h1>
-	<form action="success.php" method="post" class="navbar-form navbar-left" role="search">
+	<form action="dbUpdateCategory.php" method="post" class="navbar-form navbar-left" role="search">
   		<div class="form-group">
-	  		<div><input type="text" class="form-control" name="name_book" placeholder="Category's old name" required><div>
-        <div><input type="text" class="form-control" name="name_book" placeholder="Category's new name" required><div>
+	  		<div><input type="text" class="form-control" name="id_category" placeholder="Category's ID" required></div>
+      <div><input type="text" class="form-control" name="name_category" placeholder="Category's new name" required></div>
   			<div><button type="submit" class="btn btn-default">Update</button></div>
   		</div>
 	</form>

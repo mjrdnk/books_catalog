@@ -42,3 +42,16 @@ body {
 h1 {
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+    
+  #container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #books {
+    order: -1;
+  }
+
+}
