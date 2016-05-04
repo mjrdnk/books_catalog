@@ -48,7 +48,7 @@
 
 <div id="box">
 	<h1>Update existing category</h1>
-	<form action="categoryUpdated.php" method="post" class="navbar-form navbar-left" role="search">
+	<form action="success.php" method="post" class="navbar-form navbar-left" role="search">
   		<div class="form-group">
 	  		<div><input type="text" class="form-control" name="name_book" placeholder="Category's old name" required><div>
         <div><input type="text" class="form-control" name="name_book" placeholder="Category's new name" required><div>

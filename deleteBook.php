@@ -40,18 +40,21 @@
             <li><a href="manageBooks.php">All books</a></li>
             <li><a href="create_book.php">Create book</a></li>
             <li><a href="update.php">Update book</a></li>
-            <li><a href="delete.php">Delete book</a></li>
+            <li><a href="deleteBook.php">Delete book</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
 <div id="box">
-	<h1>This book has been updated successfully</h1>
-  <div id="container">
-    <a class="btn btn-default btn-lg" href="update.php" role="button">Update one more</a>
-    <a class="btn btn-primary btn-lg" href="list.php" role="button">See updated books</a>
-  </div>
+  <h1>Delete a book</h1>
+  <form action="success.php" method="post" class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+      <div><input type="text" class="form-control" name="id_book" placeholder="Book's ID" required></div>
+      <div><input type="text" class="form-control" name="name_book" placeholder="Book's name" required></div>
+      <div><button type="submit" class="btn btn-danger">Delete</button></div>
+    </div>
+  </form>
 </div>
 
 

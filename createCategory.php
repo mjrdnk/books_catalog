@@ -48,7 +48,7 @@
 
 <div id="box">
 	<h1>Create custom category</h1>
-	<form action="categoryAdded.php" method="post" class="navbar-form navbar-left" role="search">
+	<form action="success.php" method="post" class="navbar-form navbar-left" role="search">
   		<div class="form-group">
 	  		<div><input type="text" class="form-control" name="name_book" placeholder="Category's name" required><div>
   			<div><button type="submit" class="btn btn-success">Submit</button></div>

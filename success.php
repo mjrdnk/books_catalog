@@ -37,27 +37,18 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="manageBooks.php">All books</a></li>
-            <li><a href="create_book.php">Create book</a></li>
-            <li><a href="update.php">Update book</a></li>
-            <li><a href="delete.php">Delete book</a></li>
+            <li><a href="manageBooks.php">Manage books</a></li>
+            <li><a href="manageCategories.php">Manage categories</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
 <div id="box">
-  <h1>Update a book</h1>
-  <form action="bookUpdated.php" method="post" class="navbar-form navbar-left" role="search">
-    <div class="form-group">
-        <div><input type="text" class="form-control" name="name_book" placeholder="Book's name" required><div>
-        <div><input type="text" class="form-control" name="author" placeholder="Author" required></div>
-        <div><input type="text" class="form-control" name="page_count" placeholder="Number of Pages" required></div>
-        <div><input type="text" class="form-control" name="category" placeholder="Category" required></div>
-        <div><input type="text" class="form-control" name="price" placeholder="Price" required></div>
-      <div><button type="submit" class="btn btn-default">Update</button></div>
-    </div>
-  </form>
+	<h1>Success!</h1>
+  <div id="container">
+    <a class="btn btn-success btn-lg" href="index.php" role="button">Go to catalog</a>
+  </div>
 </div>
 
 

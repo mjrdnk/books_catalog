@@ -37,7 +37,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="manageCategories.php">All categories</a></li>
+            <li><a href="#">All categories</a></li>
             <li><a href="createCategory.php">Create category</a></li>
             <li><a href="updateCategory.php">Update category</a></li>
             <li><a href="deleteCategory.php">Delete category</a></li>

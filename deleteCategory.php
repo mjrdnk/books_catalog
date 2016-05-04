@@ -48,7 +48,7 @@
 
 <div id="box">
   <h1>Delete category</h1>
-  <form action="categoryDeleted.php" method="post" class="navbar-form navbar-left" role="search">
+  <form action="success.php" method="post" class="navbar-form navbar-left" role="search">
     <div class="form-group">
       <div><input type="text" class="form-control" name="id_category" placeholder="Category's ID" required></div>
       <div><input type="text" class="form-control" name="name_category" placeholder="Category's name" required></div>

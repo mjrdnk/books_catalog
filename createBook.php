@@ -38,20 +38,26 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="manageBooks.php">All books</a></li>
-            <li><a href="create_book.php">Create book</a></li>
-            <li><a href="update.php">Update book</a></li>
-            <li><a href="delete.php">Delete book</a></li>
+            <li><a href="createBook.php">Create book</a></li>
+            <li><a href="updateBook.php">Update book</a></li>
+            <li><a href="deleteBook.php">Delete book</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
 <div id="box">
-	<h1>That book was successfully removed</h1>
-  <div id="container">
-    <a class="btn btn-danger btn-lg" href="delete.php" role="button">Delete one more</a>
-    <a class="btn btn-success btn-lg" href="list.php" role="button">See all books</a>
-  </div>
+	<h1>Create a book</h1>
+	<form action="success.php" method="post" class="navbar-form navbar-left" role="search">
+  		<div class="form-group">
+	  		<div><input type="text" class="form-control" name="name_book" placeholder="Book's name" required><div>
+	        <div><input type="text" class="form-control" name="author" placeholder="Author" required></div>
+	        <div><input type="text" class="form-control" name="page_count" placeholder="Number of Pages" required></div>
+	        <div><input type="text" class="form-control" name="category" placeholder="Category" required></div>
+	        <div><input type="text" class="form-control" name="price" placeholder="Price" required></div>
+  			<div><button type="submit" class="btn btn-success">Submit</button></div>
+  		</div>
+	</form>
 </div>
 
 
