@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+} 
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  align-items: center;
+}
+
+#books {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  align-items: center;
+}
+
+#box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  margin: 5px;
+}
+
+#display {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1 {
+  text-transform: uppercase;
+}
