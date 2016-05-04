@@ -33,12 +33,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Book catalog</a>
+          <a class="navbar-brand" href="index.php">Book catalog</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="manageBooks.php">Manage books</a></li>
-            <li><a href="manageCategories.php">Manage categories</a></li>
+            <li><a href="manageCategories.php">All categories</a></li>
+            <li><a href="createCategory.php">Create category</a></li>
+            <li><a href="updateCategory.php">Update category</a></li>
+            <li><a href="deleteCategory.php">Delete category</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -56,41 +58,7 @@
 
 	
 
-	<div id="books">
-		<h1>books</h1>
-
-		
-
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<td>id_book</td>
-					<td>name_book</td>
-					<td>author</td>
-					<td>page_count</td>
-					<td>category</td>
-					<td>price</td>
-				</tr>
-			</thead>
-			<tbody>
-				<?php
-
-					
-            	?>
-			</tbody>
-		</table>
-
-	<div id="display">
-		<nav>
-		  <ul class="pagination">
-		   
-		    <li><a href="#">5</a></li>
-		    <li><a href="#">10</a></li>
-		    <li><a href="#">15</a></li>
-		     
-		  </ul>
-		</nav>
-	</div>
+	
 
 	</div>
 </div>

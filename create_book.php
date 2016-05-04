@@ -37,8 +37,8 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="manageBooks.php">All books</a></li>
             <li><a href="create_book.php">Create book</a></li>
-            <li><a href="list.php">List books</a></li>
             <li><a href="update.php">Update book</a></li>
             <li><a href="delete.php">Delete book</a></li>
           </ul>
@@ -55,7 +55,7 @@
 	        <div><input type="text" class="form-control" name="page_count" placeholder="Number of Pages" required></div>
 	        <div><input type="text" class="form-control" name="category" placeholder="Category" required></div>
 	        <div><input type="text" class="form-control" name="price" placeholder="Price" required></div>
-  			<div><button type="submit" class="btn btn-default">Submit</button></div>
+  			<div><button type="submit" class="btn btn-success">Submit</button></div>
   		</div>
 	</form>
 </div>

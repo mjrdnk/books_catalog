@@ -37,8 +37,8 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="manageBooks.php">All books</a></li>
             <li><a href="create_book.php">Create book</a></li>
-            <li><a href="list.php">List books</a></li>
             <li><a href="update.php">Update book</a></li>
             <li><a href="delete.php">Delete book</a></li>
           </ul>
@@ -48,11 +48,11 @@
 
 <div id="box">
   <h1>Delete a book</h1>
-  <form class="navbar-form navbar-left" role="search">
+  <form action="bookDeleted.php" method="post" class="navbar-form navbar-left" role="search">
     <div class="form-group">
       <div><input type="text" class="form-control" name="id_book" placeholder="Book's ID" required></div>
       <div><input type="text" class="form-control" name="name_book" placeholder="Book's name" required></div>
-      <div><button type="submit" class="btn btn-default">Delete</button></div>
+      <div><button type="submit" class="btn btn-danger">Delete</button></div>
     </div>
   </form>
 </div>

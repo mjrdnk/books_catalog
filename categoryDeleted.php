@@ -1,6 +1,6 @@
 <?php
 
-	require_once('connect.php');
+  require_once('connect.php');
 
 ?>
 
@@ -33,66 +33,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Book catalog</a>
+          <a class="navbar-brand" href="index.php">Book catalog</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="manageBooks.php">Manage books</a></li>
-            <li><a href="manageCategories.php">Manage categories</a></li>
+            <li><a href="manageCategories.php">All categories</a></li>
+            <li><a href="createCategory.php">Create category</a></li>
+            <li><a href="updateCategory.php">Update category</a></li>
+            <li><a href="deleteCategory.php">Delete category</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-<div id="container">
-
-	<div id="categories">
-		<h1>categories</h1>
-		<ul>
-			<li><a href="#">Fiction</a></li>
-			<li><a href="#">Non-fiction</a></li>
-		</ul>
-	</div>
-
-	
-
-	<div id="books">
-		<h1>books</h1>
-
-		
-
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<td>id_book</td>
-					<td>name_book</td>
-					<td>author</td>
-					<td>page_count</td>
-					<td>category</td>
-					<td>price</td>
-				</tr>
-			</thead>
-			<tbody>
-				<?php
-
-					
-            	?>
-			</tbody>
-		</table>
-
-	<div id="display">
-		<nav>
-		  <ul class="pagination">
-		   
-		    <li><a href="#">5</a></li>
-		    <li><a href="#">10</a></li>
-		    <li><a href="#">15</a></li>
-		     
-		  </ul>
-		</nav>
-	</div>
-
-	</div>
+<div id="box">
+	<h1>That category was successfully removed</h1>
+  <div id="container">
+    <a class="btn btn-danger btn-lg" href="deleteCategory.php" role="button">Delete one more</a>
+    <a class="btn btn-success btn-lg" href="manageCategories.php" role="button">See all categories</a>
+  </div>
 </div>
 
 
