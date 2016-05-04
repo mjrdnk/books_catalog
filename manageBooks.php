@@ -38,9 +38,9 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">All books</a></li>
-            <li><a href="create_book.php">Create book</a></li>
-            <li><a href="update.php">Update book</a></li>
-            <li><a href="delete.php">Delete book</a></li>
+            <li><a href="createBook.php">Create book</a></li>
+            <li><a href="updateBook.php">Update book</a></li>
+            <li><a href="deleteBook.php">Delete book</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
