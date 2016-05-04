@@ -1,6 +1,6 @@
 <?php
 
-  require_once('connect.php');
+  require_once('../connect.php');  
 
 ?>
 
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- stylesheets -->
-  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
 
   <!-- jQuery 2.2.2 minified version -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -35,14 +35,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Book catalog</a>
+          <a class="navbar-brand" href="../index.php">Book catalog</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">All books</a></li>
-            <li><a href="createBook.php">Create book</a></li>
-            <li><a href="updateBook.php">Update book</a></li>
-            <li><a href="deleteBook.php">Delete book</a></li>
+            <li><a href="./createBook.php">Create book</a></li>
+            <li><a href="./updateBook.php">Update book</a></li>
+            <li><a href="./deleteBook.php">Delete book</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -65,7 +65,6 @@
       <tbody>
         <?php
           
-          $connection = @new mysqli($host, $db_user, $db_password, $db_name);
           $books = "SELECT * FROM books ORDER BY name_book";
           $result = mysqli_query($connection, $books);
 

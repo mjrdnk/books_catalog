@@ -1,6 +1,6 @@
 <?php
 
-  require_once('connect.php');
+  require_once('../connect.php');  
 
 ?>
 
@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- stylesheets -->
-	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link rel="stylesheet" type="text/css" href="../styles.css">
 
 	<!-- jQuery 2.2.2 minified version -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -35,14 +35,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Book catalog</a>
+          <a class="navbar-brand" href="../index.php">Book catalog</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="manageBooks.php">All books</a></li>
-            <li><a href="createBook.php">Create book</a></li>
-            <li class="active"><a href="updateBook.php">Update book</a></li>
-            <li><a href="deleteBook.php">Delete book</a></li>
+            <li><a href="./manageBooks.php">All books</a></li>
+            <li><a href="./createBook.php">Create book</a></li>
+            <li class="active"><a href="./updateBook.php">Update book</a></li>
+            <li><a href="./deleteBook.php">Delete book</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -51,7 +51,7 @@
 <div id="box">
   <h1>Update a book</h1>
   <h2>Give book's ID and change one it's value</h2>
-  <form action="dbUpdateBook.php" method="post" class="navbar-form navbar-left" role="search">
+  <form action="../controllers/dbUpdateBook.php" method="post" class="navbar-form navbar-left" role="search">
     <div class="form-group">
       <div><input type="text" class="form-control" name="id_book" placeholder="Book's ID" required><div>
         <div><input type="text" class="form-control" name="name_book" placeholder="Book's new name" required><div>

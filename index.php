@@ -40,8 +40,8 @@
         
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="manageBooks.php">Manage books</a></li>
-            <li><a href="manageCategories.php">Manage categories</a></li>
+            <li><a href="./views/manageBooks.php">Manage books</a></li>
+            <li><a href="./views/manageCategories.php">Manage categories</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
