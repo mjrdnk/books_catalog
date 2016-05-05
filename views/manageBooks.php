@@ -20,8 +20,11 @@
   <!-- jQuery 2.2.2 minified version -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
+  <!-- Latest compiled and minified JavaScript Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
   <!-- js scripts -->
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
 
 </head>
 <body>
@@ -51,18 +54,19 @@
 <div id="box">
 
   <h1>All books listed</h1>
+  <input id="searchInput" placeholder=" Search ...">
   <table class="table table-hover">
       <thead>
         <tr>
-          <td>id_book</td>
-          <td>name_book</td>
-          <td>author</td>
-          <td>page_count</td>
-          <td>category</td>
-          <td>price</td>
+          <td><b>ID</b></td>
+          <td><b>Name</b></td>
+          <td><b>Author</b></td>
+          <td><b>Pages</b></td>
+          <td><b>Category</b></td>
+          <td><b>Price</b></td>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="fbody">
         <?php
           
           $books = "SELECT * FROM books ORDER BY id_book";
@@ -80,7 +84,7 @@
               echo "<td>".$row['author']."</td>";
               echo "<td>".$row['page_count']."</td>";
               echo "<td>".$row['category']."</td>";
-              echo "<td>".$row['price']."</td>";
+              echo "<td>".$row['price']."$</td>";
               echo "</tr>";
             }
           }
@@ -91,9 +95,34 @@
       </tbody>
     </table>
 
+    <!-- Display by 5, 10 or 15 rows -->
+    <div id="display">
+      <nav>
+        <ul class="pagination">
+          <li><a href="#">5</a></li>
+          <li><a href="#">10</a></li>
+          <li><a href="#">15</a></li>
+          <li><a href="#">all</a></li>
+        </ul>
+      </nav>
+    </div>
 </div>
 
-
+<!-- modal with some sample info -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- here could be a photo of a cover, buttons to update or delete clicked book, etc... -->
+                <h1>Information</h1>
+                <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

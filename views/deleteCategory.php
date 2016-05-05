@@ -7,21 +7,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>books catalog</title>
+  <title>books catalog</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-	<!-- BOOTSTRAP: Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- BOOTSTRAP: Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- stylesheets -->
-	<link rel="stylesheet" type="text/css" href="../styles.css">
+  <!-- stylesheets -->
+  <link rel="stylesheet" type="text/css" href="../styles.css">
 
-	<!-- jQuery 2.2.2 minified version -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- jQuery 2.2.2 minified version -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-	<!-- js scripts -->
-	<script type="text/javascript" src="script.js"></script>
+  <!-- Latest compiled and minified JavaScript Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <!-- js scripts -->
+  <script type="text/javascript" src="./script.js"></script>
 
 </head>
 <body>
