@@ -15,7 +15,7 @@
 	// connection is populated in all controllers as a parameter
 	$connection = @new mysqli($host, $db_user, $db_password, $db_name);*/
 
-	$url = getenv('mysql://uws6zai04xyiu8rt:jlzulz1fdxgjsz46@d5x4ae6ze2og6sjo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/i444kxibl2m1vpmo');
+	$url = getenv('JAWSDB_URL');
 	$dbparts = parse_url($url);
 
 	$hostname = $dbparts['d5x4ae6ze2og6sjo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'];
