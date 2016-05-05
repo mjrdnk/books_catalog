@@ -10,10 +10,10 @@
       echo 'Database not selected';
     }
 
-    $id_category = $_POST[id_category];
-    $name_category = $_POST[name_category];
+    $id_category = $_POST["id_category"];
+    $name_category = $_POST["name_category"];
 
-    $deleteCategory = "DELETE FROM categories WHERE id_category = 'id_category' AND name_category = 'name_category' LIMIT 1";
+    $deleteCategory = "DELETE FROM categories WHERE id_category = '$id_category' AND name_category = '$name_category' LIMIT 1";
 
     // The application provides two unmodifiable base categories:
     if($name_category == 'Non-Fiction' || $name_category == 'Fiction') {

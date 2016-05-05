@@ -1,0 +1,14 @@
+{
+    "name": "root/books_catalog",
+    "description": "Sample book catalog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mjrdnk",
+            "email": "maciej.jordanek@gmail.com"
+        }
+    ],
+    "require": {
+        "herrera-io/silex-pdo": "^1.2"
+    }
+}

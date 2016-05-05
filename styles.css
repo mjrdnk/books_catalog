@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 2;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /*books wrapper div in index.php*/

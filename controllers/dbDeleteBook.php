@@ -10,7 +10,10 @@
       echo 'Database not selected';
     }
 
-    $deleteBook = "DELETE FROM books WHERE id_book = '$_POST[id_book]' AND name_book = '$_POST[name_book]' LIMIT 1";
+    $id_book = $_POST["id_book"];
+    $name_book = $_POST["name_book"];
+
+    $deleteBook = "DELETE FROM books WHERE id_book = '$id_book' AND name_book = '$name_book' LIMIT 1";
 
     if(!mysqli_query($connection, $deleteBook)) {
       echo "Error at the query";

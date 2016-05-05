@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
 
           <a class="navbar-brand" href="#">Book catalog</a>
@@ -145,10 +145,12 @@
         <div class="modal-content">
             <div class="modal-body">
             	<!-- here could be a photo of a cover, buttons to update or delete clicked book, etc... -->
-                <h1>Information</h1>
+                <h1>About this book</h1>
                 <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
             </div>
             <div class="modal-footer">
+            	<button type="button" class="btn btn-default" data-dismiss="modal">Update</button>
+            	<button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>

@@ -69,7 +69,7 @@
                 // populating the unordered list with positions from the database
                 while($row = mysqli_fetch_assoc($query)) {
                   
-                  echo "<li>".$row['name_category']."</li>";
+                  echo "<li><b>ID </b>".$row['id_category']." ".$row['name_category']."</li>";
                   
                 }
               }

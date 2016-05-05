@@ -114,7 +114,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <!-- here could be a photo of a cover, buttons to update or delete clicked book, etc... -->
-                <h1>Information</h1>
+                <h1>About this book</h1>
                 <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
             </div>
             <div class="modal-footer">
