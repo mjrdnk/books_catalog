@@ -24,10 +24,10 @@
 	$database = ltrim($dbparts['./books_catalog.sql'],'/');
 
 	// Create connection
-	$conn = mysqli_connect($hostname, $username, $password, $database);
+	$connection = mysqli_connect($hostname, $username, $password, $database);
 
 	// Check connection
-	if (!$conn) {
+	if (!$connection) {
 	    die("Connection failed: " . mysqli_connect_error());
 	}
 	echo "Connection was successfully established!";
