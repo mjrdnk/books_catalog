@@ -18,10 +18,10 @@
 	$url = getenv('JAWSDB_URL');
 	$dbparts = parse_url($url);
 
-	$hostname = $dbparts['d5x4ae6ze2og6sjo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'];
-	$username = $dbparts['uws6zai04xyiu8rt'];
-	$password = $dbparts['jlzulz1fdxgjsz46'];
-	$database = ltrim($dbparts['./books_catalog.sql'],'/');
+	$hostname = $dbparts['host'];
+	$username = $dbparts['user'];
+	$password = $dbparts['pass'];
+	$database = ltrim($dbparts['path'],'/');
 
 	// Create connection
 	$connection = mysqli_connect($hostname, $username, $password, $database);
