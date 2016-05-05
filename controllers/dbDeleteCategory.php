@@ -17,7 +17,11 @@
 
     // The application provides two unmodifiable base categories:
     if($name_category == 'Non-Fiction' || $name_category == 'Fiction') {
-      die("Error. You cannot duplicate the base.");
+      die("<h1>Error. Give other category name.</h1>");
+    }
+    // The application provides two unmodifiable base categories:
+    if($id_category == 1 || $id_category == 2) {
+      die("<h1>Error. The ID 1 and 2 are reserved.</h1>");
     }
 
     if(!mysqli_query($connection, $deleteCategory)) {

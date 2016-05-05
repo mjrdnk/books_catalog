@@ -44,7 +44,7 @@
             <li><a href="./updateCategory.php">Update category</a></li>
             <li><a href="./deleteCategory.php">Delete category</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 

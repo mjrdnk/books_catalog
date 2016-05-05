@@ -44,7 +44,7 @@
             <li><a href="./updateBook.php">Update book</a></li>
             <li><a href="./deleteBook.php">Delete book</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 

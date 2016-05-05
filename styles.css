@@ -3,12 +3,16 @@ body {
   flex-direction: column;
 } 
 
+/*  BOXES AND CONTAINERS  */
+
+/*main wrapper on index.php*/
 #container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+/*categories wrapper div in index.php*/
 #categories {
   display: flex;
   flex-direction: column;
@@ -16,6 +20,7 @@ body {
   align-items: center;
 }
 
+/*books wrapper div in index.php*/
 #books {
   display: flex;
   flex-direction: column;
@@ -23,6 +28,7 @@ body {
   align-items: center;
 }
 
+/*centered box*/
 #box {
   display: flex;
   flex-direction: column;
@@ -30,21 +36,22 @@ body {
   align-items: center;
 }
 
+/*  STYLING  */
+
+/*buttons*/
 .btn {
   margin: 5px;
 }
 
-#display {
-  display: flex;
-  justify-content: flex-end;
-}
-
+/*fonts*/
 h1 {
   text-transform: uppercase;
 }
 
+
+/*at 768px when navbar changes by default in bootstrap*/
 @media screen and (max-width: 768px) {
-    
+  /*  BOXES AND CONTAINERS  */
   #container {
     flex-direction: column;
     justify-content: space-around;

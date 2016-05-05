@@ -21,7 +21,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 	<!-- js scripts -->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
 
 </head>
 <body>
@@ -43,12 +43,14 @@
             <li><a href="./views/manageBooks.php">Manage books</a></li>
             <li><a href="./views/manageCategories.php">Manage categories</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
+<!-- main container which stores: categories and books - look up css flexbox styling for more info -->
 <div id="container">
 
+	<!-- categories list -->
 	<div id="categories">
 		<h1>categories</h1>
 		<ul>
@@ -56,8 +58,6 @@
 			<li><a href="#">Non-fiction</a></li>
 		</ul>
 	</div>
-
-	
 
 	<div id="books">
 		<h1>books</h1>
@@ -81,11 +81,12 @@
 		          $books = "SELECT * FROM books ORDER BY name_book";
 		          $result = mysqli_query($connection, $books);
 
+		          // if there is any error with connection, print error on the screen
 		          if($connection->connect_errno!=0) {
 		            echo "Error:".$connection->connect_errno;
 		          } else {
 
-
+		          	// populating the table with positions from the database
 		            while($row = mysqli_fetch_assoc($result)) {
 		              echo "<tr>";
 		              echo "<td>".$row['id_book']."</td>";
@@ -118,8 +119,6 @@
 
 	</div>
 </div>
-
-
 
 </body>
 </html>

@@ -44,7 +44,7 @@
             <li><a href="./updateBook.php">Update book</a></li>
             <li><a href="./deleteBook.php">Delete book</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
 
@@ -65,7 +65,7 @@
       <tbody>
         <?php
           
-          $books = "SELECT * FROM books ORDER BY name_book";
+          $books = "SELECT * FROM books ORDER BY id_book";
           $result = mysqli_query($connection, $books);
 
           if($connection->connect_errno!=0) {
@@ -90,18 +90,6 @@
         ?>
       </tbody>
     </table>
-
-  <div id="display">
-    <nav>
-      <ul class="pagination">
-       
-        <li><a href="#">5</a></li>
-        <li><a href="#">10</a></li>
-        <li><a href="#">15</a></li>
-         
-      </ul>
-    </nav>
-  </div>
 
 </div>
 
