@@ -7,10 +7,15 @@ $(document).ready(function() {
     $('#addModal').modal('show');
   });
 
+  // NAVIGATION HELP
+  // wrench tool icon displayed on the navbar 
   $('.glyphicon-wrench').click(function() {
     $(this).attr('data-toggle', 'help','data-target', '#addHelp');
     $('#addHelp').modal('show');
-    $('a').fadeOut(100).fadeIn(500).fadeOut(100).fadeIn(500).fadeOut(100).fadeIn(500).fadeOut(100).fadeIn(500);
+    // navigation blinks
+    $('a').fadeOut(100).fadeIn(500)
+      .fadeOut(100).fadeIn(500)
+      .fadeOut(100).fadeIn(500);
   });
 
   // SEARCH BOX
@@ -48,44 +53,9 @@ $(document).ready(function() {
     "color": "#C0C0C0"
   });
 
-
-
-$("#searchDot").click(function () {
-    //split the current value of searchInput
-    var data = this.value.split(" ");
-    //create a jquery object of the rows
-    var row = $("#fbody").find("tr");
-    if (this.value == "") {
-      row.show();
-      return;
-    }
-    //hide all the rows
-    row.hide();
-
-    //Recursively filter the jquery object to get results.
-    row.filter(function (i, v) {
-      var $this = $(this);
-      for (var i = 0; i < data.length; ++i) {
-        if ($this.is(":contains('" + data[i] + "')")) {
-          return true;
-        }
-      }
-      return false;
-    })
-    //show the rows that match.
-    .show();
-
-    row.show();
-    
-  });
-
-
-
-
-
   // PAGINATION CONTROLLER for index.php
   // pre-hide to 5 places
-  $("tr:gt(5)").hide();
+  $("tr:gt(5)").hide(); 
   // show only 5 elements in the table
   $( ".pagination li:nth-child(1)" ).click(function() {
     $("tr").show();

@@ -71,7 +71,46 @@
   </div>
 </div>
 
+<input id="searchInput" placeholder=" Search ...">
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <td><b>ID</b></td>
+          <td><b>Name</b></td>
+          <td><b>Author</b></td>
+          <td><b>Pages</b></td>
+          <td><b>Category</b></td>
+          <td><b>Price</b></td>
+        </tr>
+      </thead>
+      <tbody id="fbody">
+        <?php
+          
+          $books = "SELECT * FROM books ORDER BY id_book";
+          $result = mysqli_query($connection, $books);
 
+          if($connection->connect_errno!=0) {
+            echo "Error:".$connection->connect_errno;
+          } else {
+
+
+            while($row = mysqli_fetch_assoc($result)) {
+              echo "<tr>";
+              echo "<td>".$row['id_book']."</td>";
+              echo "<td>".$row['name_book']."</td>";
+              echo "<td>".$row['author']."</td>";
+              echo "<td>".$row['page_count']."</td>";
+              echo "<td>".$row['category']."</td>";
+              echo "<td>".$row['price']."$</td>";
+              echo "</tr>";
+            }
+          }
+
+          $connection->close();
+
+        ?>
+      </tbody>
+    </table>
 
 </body>
 </html>

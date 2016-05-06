@@ -57,7 +57,10 @@
 	<!-- categories list -->
 	<div id="categories">
 		<h1>categories</h1>
+		<input id="searchInput" placeholder=" Search ..." value="">
+		<h4>Available catgories:</h4>
 		<ul>
+
 			<?php
 		          
 		          $categories = "SELECT * FROM categories ORDER BY id_category";
@@ -71,7 +74,7 @@
 		          	// populating the unordered list with positions from the database
 		            while($row = mysqli_fetch_assoc($query)) {
 		              
-		              echo "<input type='radio' id='searchDot' name='name_category'> ".$row['name_category']."<br>";
+		              echo "<li>".$row['name_category']."</li>";
 		              
 		            }
 		          }
