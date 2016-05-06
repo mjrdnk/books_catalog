@@ -4,6 +4,10 @@ Please configure your localhost inside connect.php file
 
 For heroku deployment please setup your providers data.
 
+Example database:
+
+books_catalog.sql
+
 Available use cases:
 
   Manage books:
