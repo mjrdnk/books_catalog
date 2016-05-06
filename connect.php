@@ -1,6 +1,6 @@
 <?php
 	// LOCAL SETTINGS
-	/*// please put your data as a following variables
+	// please put your data as a following variables
 	$host = "localhost";
 
 	// user ("root" by default)
@@ -13,9 +13,9 @@
 	$db_name = "books_catalog";
 
 	// connection is populated in all controllers as a parameter
-	$connection = @new mysqli($host, $db_user, $db_password, $db_name);*/
+	$connection = @new mysqli($host, $db_user, $db_password, $db_name);
 
-	// HEROKU SETTINGS
+	/*// HEROKU SETTINGS
 	$url = getenv('JAWSDB_URL');
 	$dbparts = parse_url($url);
 
@@ -25,7 +25,7 @@
 	$database = ltrim($dbparts['path'],'/');
 
 	// Create connection
-	$connection = mysqli_connect($hostname, $username, $password, $database);
+	$connection = mysqli_connect($hostname, $username, $password, $database);*/
 
 	// Check connection
 	if (!$connection) {
