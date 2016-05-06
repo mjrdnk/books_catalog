@@ -52,6 +52,10 @@ h1, h2, .table, p, form {
   text-align: center;
 }
 
+ul {
+  padding-left: 0;
+}
+
 /*at 768px when navbar changes by default in bootstrap*/
 @media screen and (max-width: 768px) {
   /*  BOXES AND CONTAINERS  */

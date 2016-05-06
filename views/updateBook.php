@@ -71,7 +71,7 @@
   </div>
 </div>
 
-<input id="searchInput" placeholder=" Search ...">
+  <input id="searchInput" placeholder=" Search ...">
   <table class="table table-hover">
       <thead>
         <tr>
@@ -111,6 +111,7 @@
         ?>
       </tbody>
     </table>
+
 
 </body>
 </html>
