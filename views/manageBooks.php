@@ -113,15 +113,27 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <!-- here could be a photo of a cover, buttons to update or delete clicked book, etc... -->
+              <!-- here could be a photo of a cover, buttons to update or delete clicked book, etc... -->
                 <h1>About this book</h1>
                 <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
-            </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <form action="./createBook.php">
+                <input type="submit" class="btn btn-primary" value="Add">
+              </form>
+              <form action="./updateBook.php">
+                <input type="submit" class="btn btn-success" value="Update">
+              </form>
+                <form action="./deleteBook.php">
+                <input type="submit" class="btn btn-danger" value="Delete">
+              </form>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+    <!-- back button sending back to the main page index.php -->
+  <div id="container">
+    <a class="btn btn-default backbutton" href="../index.php" role="button">Go to catalog</a>
+  </div>
 </div>
 
 </body>

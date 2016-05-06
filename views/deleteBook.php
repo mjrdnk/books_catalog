@@ -60,6 +60,11 @@
       <div><button type="submit" class="btn btn-danger">Delete</button></div>
     </div>
   </form>
+
+  <!-- back button sending back to the main page index.php -->
+  <div id="container">
+    <a class="btn btn-default backbutton" href="../index.php" role="button">Go to catalog</a>
+  </div>
 </div>
 
 

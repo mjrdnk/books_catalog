@@ -53,7 +53,7 @@
 
 <div id="box">
   <h1>Update a book</h1>
-  <h2>Give book's ID and change one it's value</h2>
+  <h2>Give book's ID and other</h2>
   <form action="../controllers/dbUpdateBook.php" method="post" class="navbar-form navbar-left" role="search">
     <div class="form-group">
       <div><input type="text" class="form-control" name="id_book" placeholder="Book's ID" required><div>
@@ -65,6 +65,10 @@
       <div><button type="submit" class="btn btn-default">Update</button></div>
     </div>
   </form>
+  <!-- back button sending back to the main page index.php -->
+  <div id="container">
+    <a class="btn btn-default backbutton" href="../index.php" role="button">Go to catalog</a>
+  </div>
 </div>
 
 

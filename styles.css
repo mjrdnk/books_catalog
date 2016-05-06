@@ -48,7 +48,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h2, .table {
+h1, h2, .table, p, form {
   text-align: center;
 }
 

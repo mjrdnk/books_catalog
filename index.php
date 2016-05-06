@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-default navbar-static-top">
       <div class="container">
 
           <a class="navbar-brand" href="#">Book catalog</a>
@@ -40,9 +40,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        
         <div class="collapse navbar-collapse navHeaderCollapse">
           <ul class="nav navbar-nav navbar-right">
+          	
+        	<li><a><span class="glyphicon glyphicon-wrench"></span></a></li>
             <li><a href="./views/manageBooks.php">Manage books</a></li>
             <li><a href="./views/manageCategories.php">Manage categories</a></li>
           </ul>
@@ -70,7 +71,7 @@
 		          	// populating the unordered list with positions from the database
 		            while($row = mysqli_fetch_assoc($query)) {
 		              
-		              echo "<input type='radio' id='searchInput' name='name_category'> ".$row['name_category']."<br>";
+		              echo "<input type='radio' id='searchDot' name='name_category'> ".$row['name_category']."<br>";
 		              
 		            }
 		          }
@@ -149,9 +150,32 @@
                 <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo.</p>
             </div>
             <div class="modal-footer">
-            	<button type="button" class="btn btn-default" data-dismiss="modal">Update</button>
-            	<button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	            <form action="./views/createBook.php">
+	            	<input type="submit" class="btn btn-primary" value="Add">
+	            </form>
+	            <form action="./views/updateBook.php">
+	            	<input type="submit" class="btn btn-success" value="Update">
+	            </form>
+	            <form action="./views/deleteBook.php">
+	            	<input type="submit" class="btn btn-danger" value="Delete">
+	            </form>
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal with some sample info -->
+<div class="modal fade" id="addHelp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2><span class="glyphicon glyphicon-wrench"></span></h2>
+                <p>You can manage books or categories by clicking one of the corresponding menu buttons in the navigation bar.</p>
+            </div>
+            <div class="modal-footer">
+	            
+	                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
