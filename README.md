@@ -1,11 +1,17 @@
 # books_catalog
 
+Please configure your localhost inside connect.php file
+
+For heroku deployment please setup your providers data.
+
 Available use cases:
 
   Manage books:
+  
     create, update, delete
     
   Manage categories:
+  
     create, update, delete
 
 
@@ -16,7 +22,7 @@ Functionalities for future improvement (known weakpoints):
   
     doubling categories where adding new both book and category
     
-    storing only lowercase values in the database
+    storing both lowercase and uppercase values in the database
     
   Frontend:
   
@@ -24,5 +30,7 @@ Functionalities for future improvement (known weakpoints):
     
     pop up clicked book information, not only Lorem Ipsum
     
+    
+Chrome and Firefox tested
     
   
