@@ -24,6 +24,8 @@ Functionalities for future improvement (known weakpoints):
     
     storing both lowercase and uppercase values in the database
     
+    other backend weaknesses
+    
   Frontend:
   
     update book searchbox doesn't work
